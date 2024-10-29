@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tab Session Timer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        width: 300px;
+      }
+      h2, h3 {
+        color: black;
+      }
+      .timer {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .timer span {
+        font-weight: bold;
+      }
+      #tab-timers div {
+        margin-bottom: 5px;
+      }
+      .tab-name {
+        color: black;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Browser Session</h2>
+    <div id="browser-timer" class="timer">Browser Session: <span id="browser-time">--</span></div>
+    <div id="tabs-timer">
+      <h3>Tab: <span id="tab-name" class="tab-name">Loading...</span></h3>
+      <div id="tab-timer" class="timer">Tab Session: <span id="tab-time">--</span></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
